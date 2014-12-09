@@ -1,0 +1,5 @@
+%h1 Hello World
+
+- @produits.each do |produit|
+  = link_to produit.nom, produit_path(produit.id)
+  %p= produit.description
